@@ -1,0 +1,230 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <header id="header">
+      <img id ="header-img" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f34e.svg" alt="red apple">
+      <h1 id="logo-text">Zaki's Apples</h1>
+      <nav id="nav-bar">
+        <a href="#Features" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#order" class="nav-link">Order</a>
+      </nav>
+    </header>
+    <main>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <section id="contact">
+          <p id="contact-text">Hand-picked, quality-assured apples</p>
+          <input name="email" id="email" type="email" placeholder="Type your email here" required></input>
+          <input id="submit" type="submit" value="JOIN US" method="POST" action="https://www.freecodecamp.com/email-submit"></input>
+        </section>
+      </form>
+      <div id="Features">
+        <div id="excellent_quality">
+          <img id="red-apple" src="https://em-content.zobj.net/source/google/387/red-apple_1f34e.png" alt="red apple">
+          <h2 id="features_title">Excellent Quality</h2>
+          <p id="features_description">Our excellent apples are crisp, juicy, and bursting with sweet-tart flavor. They boast vibrant colors, a tantalizing aroma, and a versatile nature, perfect for both sweet and savory dishes.</p>
+        </div>
+        <div id="natural">
+          <img id="red-apple" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f333.svg" alt="red apple">
+          <h2 id="features_title">Naturally Grown</h2>
+          <p id="features_description">Our naturally grown apples, cultivated without synthetic pesticides or fertilizers, embody the essence of pure, wholesome goodness straight from nature's bounty.</p>
+         </div> 
+        </div>
+        <iframe id="video" src="https://www.youtube.com/embed/DzCviQcuKG4">
+        </iframe>
+        <div id="order">
+          <p id="order_description">Click the button down below to place your order NOW</p>
+          <button id="order_button">ORDER</button>
+        </div>
+    </main>
+    <footer id="footer">
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contact us</li>
+      </ul>
+      <p id="rights">All rights reserved</p>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+   
+  box-sizing: border-box; 
+  margin: 0;
+  font-family: Goudy Old Style, sans-serif; 
+}
+
+
+
+#header {
+  display: flex; 
+  flex-wrap: nowrap;
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  font-family: Goudy Old Style, sans-serif; 
+  color: black;
+  padding: 10px;
+  z-index: 1;
+  
+}
+
+#nav-bar {
+  margin-left: auto;  
+  padding: 10px;  
+ 
+}
+
+#nav-bar a {
+  margin: 15px; 
+  font-size: 25px;
+  color: black;
+  text-decoration: none; 
+
+}
+
+
+
+#form, #header, html {
+  background: linear-gradient(
+    90deg,
+    #66ff66 50%, 
+    #ccffcc 100%
+  );
+}
+
+
+input {
+  display: block; 
+}
+
+#email {
+  margin: 10px auto;
+  padding: 15px 100px;
+}
+
+#submit {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(0, 255, 0, 0.5); 
+}
+  
+#contact {
+  padding: 10px;
+  margin-top: 73px;
+  
+}
+
+#contact-text {
+  font-family: Palatino, sans-serif;
+  font-size: 30px; 
+  text-align: center; 
+  padding: 20px; 
+  font-weight: bold; 
+}
+
+
+#logo-text {
+  text-align: center; 
+  padding-top: 5px; 
+}
+
+#excellent_quality {
+  padding: 0 auto;
+}
+
+#red-apple {
+  position: relative; 
+  top: 2rem;
+  left: 4rem;
+  width: 100px; 
+}
+
+#features_title, #features_description {
+  position: relative;
+  top: -4.2rem;
+  left: 6rem; 
+  width: 60%; 
+  margin-left: 100px;
+  font-size: 30px;
+}
+
+#order {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#order_description {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#order_button {
+  position: relative; 
+  top: 10px; 
+  left: 7rem;
+  width: 500px;
+  height: 60px; 
+  background-color: rgba(0, 255, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+iframe {
+ width: 500px;
+ height: 500px; 
+ margin-left: 150px; 
+ margin-right: 150px; 
+}
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.5); 
+  width: 80%; 
+  margin: 0px auto; 
+  padding: 10px;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: flex-end; 
+  list-style: none; 
+}
+
+li {
+  margin: 5px; 
+  font-size: 20px; 
+}
+
+footer p {
+  font-size: 30px;
+  text-align: right; 
+
+}
+
+#header-img {
+  width: 50px; 
+}
+
+@media (max-width: 500px) {
+  
+}
+
+
+** end of undefined **
+
